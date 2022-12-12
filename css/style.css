@@ -1,0 +1,125 @@
+/*importando a font roboto 400regeular e 700bold lá do google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body, html {
+    font-family: Roboto, sans-serif; /*utilizadno a fonte importada roboto*/    
+    margin: 0;
+    /*cor do fundo com gradiente*/
+    /*background: linear-gradient(236.85deg, hwb(240 54% 44%) 27.26%, hwb(0 99% 1%) 96.03%);
+    background-repeat: no-repeat;*/    
+}
+
+.bg-img {    
+    background-image: url(../img/fisio_home_care.jpg); /*imagemm de fundo da página*/
+    background-repeat: no-repeat; /*não repetir a imagemm de fundo*/
+    background-size: cover; /*melhor ajuste para imagem de fundo*/
+    position: center; /*centralizarimg a imagem de fundo*/
+    background-attachment: fixed; /*fixa o tamanho da imgagem de fundo... mesmo quando possui rolagem de tela quando modificado o tamanho da tela*/
+}
+
+.container {}
+
+.cabecalho {
+    display: flex; /*informando que vai ser utilizado o flex-box no elemento pai <hader>*/
+    align-items: center; /*itens centralizados em linha*/
+    justify-content: space-between; /*propriedade para colocar espaço entre os elementos*/
+    margin: 10px 100px 10px 100px; /*topo direita esquerda bottom*/          
+}
+
+h1 {    
+    text-align: center; /*alinhar o texto*/
+}
+
+.img-simb {
+    max-width: 130px; /*tamanho máximmo da largura*/             
+}
+
+.img-foto {
+    max-width: 130px; /*tamanho máximmo da largura*/
+    border-radius: 100%; /*borda arredondada*/              
+}
+
+.tabela {}
+
+table, th, td {    
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;    
+}
+
+th {
+    width: 160px;
+    height: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    width: 160px;
+    height: 25px;
+}
+
+input {
+    background: transparent;
+    text-align: center;
+    border: 0;
+    outline: 1;
+    font-size: 15px;
+    width: 98%;
+    height: 100%;
+}
+
+.div-botao {    
+    margin: 10px 100px; /*topo e bottom... direita e esquerda*/
+}
+
+.div-botao button {
+    border: 0;
+    color: black;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 160px;
+}
+
+.bt-amarelo {    
+    background: rgb(251, 255, 0);    
+  }
+
+  .bt-laranja {    
+    background: rgb(255, 160, 35);    
+  }
+
+  .bt-azul {    
+    background: rgb(147, 147, 241);    
+  }
+
+  .bt-tirar-cor {
+    background: white;
+    opacity: 0.7;    
+  }
+
+  .bt-salvar {
+    background: red;
+    opacity: 0.8;
+  }
+  
+  .div-botao button:hover {
+    opacity: 0.4;
+  }
+  
+  .div-botao-salvar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-botao-cores {
+    display: flex;
+    justify-content: center;
+  }
